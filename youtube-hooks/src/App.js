@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Searchbar from './components/Searchbar';
 
 export default class App extends Component {
   state = {
@@ -24,7 +25,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <SearchBar onFormSubmit={this.onTermSubmit} />
+      <Searchbar onFormSubmit={this.onTermSubmit} />
     );
   }
 
